@@ -1,17 +1,36 @@
 aid: green-revolution-cooling
 name: Green Revolution Cooling
-description: 'Green Revolution Cooling is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Green Revolution Cooling, which does business as GRC and brands itself "The Immersion
+  Cooling Authority", is an Austin, Texas manufacturer of single-phase liquid immersion
+  cooling systems for data centers. Founded in 2009, GRC builds the ICEraQ family of
+  immersion-cooled racks (SX, Flex, Nano, Micro), the ICEtank containerized immersion data
+  center, the ReliaSys IR500 coolant distribution unit, and ElectroSafe dielectric fluids,
+  and sells them into AI/ML, HPC, edge, enterprise, cloud and hyperscale data centers in
+  more than twenty countries. Its only software product is Systems Manager, an on-premises
+  appliance that gives operators a single monitoring interface across connected ICEraQ and
+  ICEtank systems over the customer's own secure network. GRC publishes no developer
+  portal, no API reference, no SDKs and no machine-readable API description; its systems
+  integrate with data center DCIM and BMS platforms through industrial protocols such as
+  Modbus TCP, SNMP and BACnet rather than through a web API.
 url: https://raw.githubusercontent.com/api-evangelist/green-revolution-cooling/refs/heads/main/apis.yml
+image: https://www.grcooling.com/wp-content/uploads/2025/07/cropped-favicon-192x192.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-22'
 modified: '2026-08-22'
 tags:
 - Company
+- Data Centers
+- Immersion Cooling
+- Liquid Cooling
+- Infrastructure
+- Hardware
+- Energy Efficiency
+- High Performance Computing
+- Artificial Intelligence
+- Sustainability
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +38,58 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Plans
+  url: plans/green-revolution-cooling-plans-pricing.yml
+- type: LLMsTxt
+  url: llms/green-revolution-cooling-llms.txt
+- type: DomainSecurity
+  url: security/green-revolution-cooling-domain-security.yml
 - type: Website
+  url: https://www.grcooling.com/
+- type: Blog
+  url: https://www.grcooling.com/blogs/
+- type: Support
+  url: https://www.grcooling.com/support/
+- type: ContactUs
+  url: https://www.grcooling.com/contact-us/
+- type: News
+  url: https://www.grcooling.com/news/
+- type: PressReleases
+  url: https://www.grcooling.com/press-releases/
+- type: LearningCenter
+  url: https://www.grcooling.com/learning-center/
+- type: Partners
+  url: https://www.grcooling.com/partners/
+- type: Careers
+  url: https://www.grcooling.com/careers/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/green-revolution-cooling/
+- type: SecondaryMarketListing
   url: https://forgeglobal.com/green-revolution-cooling_stock/
+x-enrichment:
+  date: '2026-08-22'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    GRC manufactures immersion cooling hardware and ships exactly one software product —
+    Systems Manager, an on-premises monitoring appliance reached over the customer's own
+    network — so its integration surface is Modbus TCP / SNMP / BACnet into a DCIM or BMS,
+    and the only machine-readable endpoint on either GRC host is the stock WordPress
+    wp-json index whose 383 routes are all WordPress core and third-party plugins with no
+    GRC-authored namespace.
+  evidence:
+  - url: https://www.grcooling.com/openapi.json
+    status: 404
+  - url: https://www.grcooling.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.grcooling.com/wp-json/
+    status: 200
+  - url: http://docs.grcooling.com/
+    status: 200
+  - url: https://www.gr-cooling.com/openapi.json
+    status: 404
+  checked: '2026-08-22'

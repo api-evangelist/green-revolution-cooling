@@ -1,0 +1,58 @@
+generated: '2026-08-22'
+method: probed
+source: >-
+  Live unauthenticated GET probes of /.well-known/* on every host named in apis.yml
+  (www.grcooling.com, www.gr-cooling.com) on 2026-08-22.
+note: >-
+  RECORDED ABSENCE, NOT A PRESENCE. Every /.well-known/ path 404s on both GRC hosts,
+  so no WellKnown or SecurityTxt pointer is wired into apis.yml. Both hosts are
+  WordPress sites (WP Engine) whose 404 handler returns the themed HTML 404 page for
+  unknown paths; the /llms.txt and /.well-known/security.txt probes on www.grcooling.com
+  returned the bare nginx 404 body instead. Neither is a served document.
+hosts:
+- host: www.grcooling.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: www.gr-cooling.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
