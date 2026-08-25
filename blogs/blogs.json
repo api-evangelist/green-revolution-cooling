@@ -1,0 +1,14 @@
+{
+  "repo": "green-revolution-cooling",
+  "feeds": [
+    {
+      "source": "https://www.grcooling.com/",
+      "feed_url": "https://www.grcooling.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-22T20:20:02Z"
+}
