@@ -14,6 +14,17 @@ description: >-
   integrate with data center DCIM and BMS platforms through industrial protocols such as
   Modbus TCP, SNMP and BACnet rather than through a web API.
 url: https://raw.githubusercontent.com/api-evangelist/green-revolution-cooling/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.grcooling.com/wp-content/uploads/2025/07/cropped-favicon-192x192.png
 x-type: company
 x-source: harvest:secondary-market
