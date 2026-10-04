@@ -45,7 +45,7 @@ created: '2026-08-22'
 modified: '2026-08-22'
 tags:
 - Company
-- Data-Center
+- Data Center
 - Immersion Cooling
 - Liquid Cooling
 - Infrastructure
@@ -65,6 +65,7 @@ tags_raw:
 - High Performance Computing
 - Artificial Intelligence
 - Sustainability
+- Data-Center
 apis: []
 maintainers:
 - FN: Kin Lane
